@@ -1,0 +1,16 @@
+
+logging:
+  level:
+    #    root: DEBUG
+    com:
+      example:
+        sodebug:
+          aspect: DEBUG
+  file:
+    name: logs/
+  pattern:
+    dateformat: dd-MM-yyyy HH:mm:ss
+  logback:
+    rollingpolicy:
+      max-file-size: 50MB
+      max-history: 183
