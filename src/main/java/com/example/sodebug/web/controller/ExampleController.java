@@ -20,9 +20,9 @@ import org.springframework.web.bind.annotation.*;
 public class ExampleController {
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping("{id}")
+    @GetMapping()
     @ToLogger(action = ActionEnum.READ, actionDomain = ActionDomainEnum.CRUD, httpMethod = HttpMethodEnum.GET)
-    public ResponseEntity<Object> getOne(@PathVariable Long id) {
-        return ResponseEntity.ok(new Object());
+    public ResponseEntity<Object> getOne() {
+        return ResponseEntity.ok("Hello World!");
     }
 }

@@ -1,4 +1,11 @@
-
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:db
+    username: sa
+    password: sa
 logging:
   level:
     #    root: DEBUG
